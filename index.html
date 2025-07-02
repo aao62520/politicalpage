@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aadil Yousuf for BOE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Aadil Yousuf</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#why">Why I’m Running</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero fade-in">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-left">
+          <h1 class="hero-title">Elect <span class="bold">Aadil Yousuf</span></h1>
+          <p class="hero-sub">For BOE | Vote November 4<sup>th</sup>, 2025</p>
+          <p class="hero-tag">Young Enough to Understand,<br>Old Enough to Act.</p>
+          <a class="cta-button" href="#vision">Read More</a>
+        </div>
+        <div class="hero-right">
+          <img src="images/aadil-headshot.png" alt="Aadil Yousuf" class="hero-img" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section about slide-up">
+    <div class="container">
+      <h2>Meet Aadil</h2>
+      <p>
+        Aadil Yousuf is a proud graduate of FLHS, Class of 2023. He captained the varsity basketball team for two years and worked with the Mayor to organize community events in Fair Lawn. He’s now at Rutgers Business School with a full scholarship and leadership roles in student government, consulting, and finance organizations.
+      </p>
+      <p>
+        With experience at Johnson & Johnson and the National Basketball Association, Aadil brings a fresh, yet experienced perspective to educational leadership.
+      </p>
+    </div>
+  </section>
+
+  <section id="why" class="section why slide-up">
+    <div class="container">
+      <h2>Why I’m Running</h2>
+      <p>
+        I’ve seen what students need—and what’s missing. Fair Lawn needs leadership that evolves with the times. I’m running to bring clarity, transparency, and care to every school decision. I’m close enough to understand what students face, and old enough to make change happen.
+      </p>
+    </div>
+  </section>
+
+  <section id="vision" class="section vision fade-in">
+    <div class="container">
+      <h2>My Vision for Fair Lawn Students</h2>
+      <div class="vision-grid">
+        <div class="card">
+          <h3>Support Beyond Graduation</h3>
+          <p>Appoint a Career Chair to support students after graduation—through jobs, mentorship, and life planning.</p>
+        </div>
+        <div class="card">
+          <h3>Make the Budget Clear</h3>
+          <p>Provide a transparent, visual public budget so every taxpayer knows exactly where their money goes.</p>
+        </div>
+        <div class="card">
+          <h3>Invest in Student Technology</h3>
+          <p>Upgrade learning environments with modern tools and tech that meet today’s digital learning standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <p>Paid for by Friends of Aadil</p>
+      <p><a href="http://aadil4fairlawn.com">aadil4fairlawn.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple scroll animation
+    const elements = document.querySelectorAll('.fade-in, .slide-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
